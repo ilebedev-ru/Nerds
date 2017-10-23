@@ -11,6 +11,7 @@ body {
 }
 
 a {
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -45,28 +46,387 @@ p {
 
 .container {
 	display: flex;
+	justify-content: space-between;
 
 	width: 1160px;
 	margin: 0 auto;
 }
 
+.button {
+	display: inline-block;
+	padding: 16px 40px;
+
+	font-size: 16px;
+	line-height: 18px;
+
+	color: #ffffff;
+	background-color: #000000;
+	text-transform: uppercase;
+
+	border-radius: 4px;
+}
+
 /*---------------------------ХЕДЕР-------------------------------*/ 
 
 header {
+	padding-top: 49px;
+	padding-bottom: 17px;
 	background-color: #eeeeee;
 }
 
 
-.header-menu {
+
+.header-menu,
+.header-basket {
+	margin: 0;
+	padding: 0;
+	padding-top: 25px;
+
 	display: flex;
 	list-style: none;
 }
 
 .header-menu li {
-	margin-right: 47px;
+	margin-right: 46px;
 }
 
+.header-menu li a,
+.header-basket li a {
+	font: inherit;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.header-menu .active,
+.header-basket .active {
+	padding-bottom: 9px;
+	border-bottom: 2px solid #fb565a;
+}
+
+.header-menu li a:hover,
+.header-menu li a:focus,
+.header-basket li a:hover,
+.header-basket li a:focus {
+	color: #fb565a;
+}
+
+.header-menu li a:active,
+.header-basket li a:active {
+	color: rgba(0,0,0, 0.3);;
+}
+
+.header-basket a {
+	position: relative;
+	padding-left: 40px;
+}
+
+.header-basket a::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 2px;
+
+	width: 15px;
+	height: 15px;
+
+	background-image: url("../img/cart-icon.svg");
+	fill: #a6a6a6;
+}
+
+/*---------------------------Основное фото со слайдером-------------------------------*/ 
+
+
+
 .main-photo {
+	margin-bottom: 80px; 
 	background-color: #eeeeee;
 }
 
+.main-slogan-slide1 {
+	width: 100%;
+	min-height: 413px;
+
+	padding-top: 65px;
+	box-sizing: border-box;
+
+	background-image: url("../img/slide1.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.main-slogan-slide1 p {
+	margin-bottom: 40px;
+}
+
+.main-slogan {
+	display: block;
+	margin-bottom: 25px;
+
+	font-size: 55px;
+	line-height: 55px;
+}
+
+.main-photo .button {
+	padding: 16px 55px;
+
+	background-color: #fb565a;
+}
+
+
+.main-photo .button:hover,
+.main-photo .button:focus {
+	background-color: #e74246;
+}
+
+.main-photo .button:active {
+	color: rgba(255,255,255, 0.3);
+
+	background-color: #d7373b;
+	box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.1);
+}
+
+
+/*----------------Блок услуг------------------------------------*/
+
+
+.services .container {
+	margin-bottom: 40px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0;
+	margin-bottom: 80px;
+	padding: 0;
+
+	width: 100%;
+
+	list-style: none;
+}
+
+.services-list li {
+	width: 300px;
+}
+
+.services-list h3 {
+	margin: 15px 0;
+	padding: 0;
+
+	font-size: 24px;
+	line-height: 30px;
+
+	text-transform: uppercase;
+}
+
+.services-list p {
+	margin-bottom: 31px;
+}
+
+.services-list .button:active {
+	color: rgba(255,255,255, 0.3);
+	box-shadow: inset 0px 3px 0px 0px rgba(0,0,0,0.1);
+}
+
+.services-list .red {
+	background-color: #fb565a;
+}
+
+.services-list .red:hover,
+.services-list .red:focus {
+	background-color: #e74246;
+}
+
+.services-list .red:active {
+	background-color: #d7373b;
+}
+
+.services-list .green {
+	background-color: #00ca74;
+}
+
+.services-list .green:hover,
+.services-list .green:focus {
+	background-color: #00bc6c;
+}
+
+.services-list .green:active {
+	background-color: #00aa62;
+}
+
+.services-list .yellow {
+	background-color: #efc84a;
+}
+
+.services-list .yellow:hover,
+.services-list .yellow:focus {
+	background-color: #eab534;
+}
+
+.services-list .yellow:active {
+	background-color: #e5a722;
+}
+
+
+/*----------------Блок about-us------------------------------------*/
+
+
+.about-us .container {
+	margin-bottom: 40px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+.about-us-text {
+	width: 700px;
+	margin-bottom: 50px;
+}
+
+
+.abous-us-slogan {
+	display: block;
+	margin-top: 34px;
+	margin-bottom: 32px;
+    
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.about-us-text p {
+	margin-bottom: 40px;
+}
+
+p.about-us-services {
+	margin-bottom: 23px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.about-us-services-list {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.about-us-services-list li {
+	position: relative;
+
+	padding-left: 37px;
+	margin-bottom: 24px;
+}
+
+.about-us-services-list li::before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 12px;
+
+	width: 25px;
+	height: 2px;
+
+	background-color: #fb565a;
+}
+
+.abous-us-statistic {
+	margin: 0;
+	padding: 0;
+
+	width: 360px;
+}
+
+.abous-us-statistic > p {
+	margin-top: 30px;
+	margin-bottom: 38px;
+
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.abous-us-statistic-table td {
+	padding-right: 18px;
+	padding-bottom: 15px;
+}
+
+.abous-us-statistic-table tr:first-child {
+	font-size: 45px;
+	line-height: 45px;
+
+}
+
+.abous-us-statistic-table .upper {
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align: top;
+}
+
+.abous-us-statistic-table p {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+/*----------------Блок наши клиенты------------------------------------*/
+
+
+.our-clients .container {
+	margin-bottom: 40px;
+
+	border-bottom: 2px solid #eeeeee;
+}
+
+
+.our-clients-list {
+	display: flex;
+	justify-content: space-between;
+
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+
+.our-clients-list li {
+	width: 280px;
+	position: relative;
+	text-align: center;
+	
+}
+
+.our-clients-list li::before {
+	content: "";
+	position: absolute;
+	left: -1px;
+	top: 20px;
+
+	width: 2px;
+	height: 52px;
+
+	background-color: #eeeeee;
+}
+
+.our-clients-list li:first-child::before {
+	display: none;
+}
+
+.our-clients-list a {
+	display: block;
+	padding: 15px 30px;
+	margin: 0 auto;
+
+	opacity: 0.3;
+}
+
+.our-clients-list a:hover,
+.our-clients-list a:focus {
+	opacity: 1;
+
+}
