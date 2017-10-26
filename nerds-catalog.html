@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Нёрдс - страница каталога</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    	<header>
+    		<div class="container">
+	    		<a class="header-logo-link" href="index.html"><img src="img/nerds-logo.png" alt="Веб студия Нёрдс" width="160" height="65"></a>
+	    		<ul class="header-menu">
+	    			<li><a href="#">Студия</a></li>
+	    			<li><a href="#">Клиенты</a></li>
+	    			<li><a class="active">Магазин</a></li>
+	    			<li><a href="#">Контакты</a></li>
+	    		</ul>
+	    		<ul class="header-basket">
+	    			<li><a href="#">Корзина</a></li>
+	    		</ul>
+    		</div>
+    	</header>
+
+    	<main>
+    		<section class="catalog-title">
+    			<h1>Магазин готовых шаблонов</h1>
+    		</section>
+			<div class="container">
+				<section class="catalog-filter">
+					<h2 class="visually-hidden">Фильтр шаблонов</h2>
+					<form action="http://echo.htmlacademy.ru" method="get" class="catalog-filter-form">
+						<h3>Стоимость</h3>
+						<input type="range">
+						<p>
+							от <input type="number"> до <input type="number">
+						</p>
+						<h3>Сетка:</h3>
+						<label>
+							<input type="radio" name="setka">
+							Адаптивная
+						</label>
+						<label>
+							<input type="radio" name="setka">
+							Фиксированная
+						</label>
+						<label>
+							<input type="radio" name="setka">
+							Резиновая
+						</label>
+
+						<h3>Особенности</h3>
+						<label>
+							<input type="checkbox" name="slider" checked>
+							Слайдер
+						</label>
+						<label>
+							<input type="checkbox" name="block">
+							Блок преимуществ
+						</label>
+						<label>
+							<input type="checkbox" name="news" checked>
+							Новости
+						</label>
+						<label>
+							<input type="checkbox" name="gallery">
+							Галерея
+						</label>
+						<label>
+							<input type="checkbox" name="cart" >
+							Корзина
+						</label>
+						<button type="submit" class="button">Показать</button>
+					</form>
+				</section>
+			</div>
+
+
+
+
+
+
+    		<section class="main-map">
+    			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25fc41a7f52cd0e3d3f0e9debecb016ff8ab3ab520c4780688ff6b1bd516c3ea&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+    			<div class="container">
+	    			<h2 class="visually-hidden"> Карта как нас найти</h2>
+	    			<!-- джава скрипт и фоном карту -->
+	    			<div class="main-map-card">
+	    				<h3>NЁRDS DESIGN STUDIO</h3>
+	    				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+	    				<p>тел. +7(812) 275-75-75</p>
+	    				<a class="button write-link" href="#">Напишите нам</a>
+	    			</div>
+    			</div>
+    		</section>
+    	</main>
+
+    	<footer>
+    		<div class="container">
+	    		<ul class="footer-social-button">
+	    			<li><a href="vk.com" alt="Группа Вконтакте"><img src="img/vk-icon.svg"></a></li>
+	    			<li><a href="fb.com" alt="Группа Фейсбук"><img src="img/fb-icon.svg"></a></li>
+	    			<li><a href="instagram.com" alt="Инстаграм"><img src="img/insta-icon.svg"></a></li>
+	    		</ul>
+	    		<div class="footer-text">
+		    		<span class="footer-slogan">Давайте дружить, это выгодно!</span>
+		    		<p>Скидка 10% для друзей из социальных сетей</p>
+		    	</div>
+	    	</div>
+    	</footer>
+		<section class="write-us">
+			<div class="container">
+				<h2>Напишите нам</h2>
+				<button class="button-close"><span class="visually-hidden">Закрыть</span></button>
+				<form action="http://echo.htmlacademy.ru" method="get" class="write-us-form">
+					<div class="write-us-column">
+						<p>
+							<label for="name">Ваше имя</label>
+							<input type="text" name="name"  id="name" placeholder="Представьтесь, пожалуйста" required>
+						</p>
+						<p>
+							<label for="mail">Ваш E-mail</label>
+							<input type="text" name="mail"  id="mail" placeholder="Для отправки ответа" required>
+						</p>
+					</div>
+					<label for="textarea">Текст письма</label>
+					<textarea name="textarea" class="mail-text" id="textarea" required>В свободной форме</textarea>
+					<button type="submit" name="write-us-button" class="button submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	<script src="js/nerds.js"></script>
+    </body>
+</html>

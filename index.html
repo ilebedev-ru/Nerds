@@ -28,12 +28,31 @@
     		<section class="main-photo">
     			<div class="container">
 	    			<h2 class="visually-hidden">Основной лозунг нашей компании</h2>
-	    			<div class="main-slogan-slide1">
+	    			<input type="radio" name="main-slider" id="main-slider-1" checked>
+	    			<div class="main-slides main-slogan-slide1">
 		    			<span class="main-slogan">Долго, дорого, <br> скрупулезно.</span>
 		    			<p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения</p>
 		    			<a class="button" href="#">Узнать больше</a>
 	    			</div>
-	    			<!-- здесь должен быть слайдер -->
+
+	    			<input type="radio" name="main-slider" id="main-slider-2">
+	    			<div class="main-slides main-slogan-slide2">
+		    			<span class="main-slogan">Любим математику <br> как никто другой</span>
+		    			<p>Никакого креатива, только математические формулы <br>для расчета идеальных пропорций.</p>
+		    			<a class="button" href="#">Узнать больше</a>
+	    			</div>
+
+	    			<input type="radio" name="main-slider" id="main-slider-3">
+	    			<div class="main-slides main-slogan-slide3">
+		    			<span class="main-slogan">Только ночь, <br> только хардкор</span>
+		    			<p>Работать днем, как все? Мы против этого. <br> ближе к полуночи работа только начинается</p>
+		    			<a class="button" href="#">Узнать больше</a>
+	    			</div>
+	    			
+	    			<label for="main-slider-1">11</label>
+	    			<label for="main-slider-2">22</label>
+	    			<label for="main-slider-3">33</label>
+<!-- СЛАЙДЕР ДОДЕЛЫВАТЬ -->
 	    		</div>
     		</section>
 
@@ -122,7 +141,7 @@
 	    				<h3>NЁRDS DESIGN STUDIO</h3>
 	    				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 	    				<p>тел. +7(812) 275-75-75</p>
-	    				<a class="button" href="#">Напишите нам</a>
+	    				<a class="button write-link" href="#">Напишите нам</a>
 	    			</div>
     			</div>
     		</section>
@@ -131,13 +150,37 @@
     	<footer>
     		<div class="container">
 	    		<ul class="footer-social-button">
-	    			<li><a href="vk.com" alt="Группа Вконтакте"><svg></svg></a></li>
-	    			<li><a href="fb.com" alt="Группа Фейсбук"><svg></svg></a></li>
-	    			<li><a href="instagram.com" alt="Инстаграм"><svg></svg></a></li>
+	    			<li><a href="vk.com" alt="Группа Вконтакте"><img src="img/vk-icon.svg"></a></li>
+	    			<li><a href="fb.com" alt="Группа Фейсбук"><img src="img/fb-icon.svg"></a></li>
+	    			<li><a href="instagram.com" alt="Инстаграм"><img src="img/insta-icon.svg"></a></li>
 	    		</ul>
-	    		<span class="footer-slogan">Давайте дружить, это выгодно!</span>
-	    		<p>Скидка 10% для друзей из социальных сетей</p>
+	    		<div class="footer-text">
+		    		<span class="footer-slogan">Давайте дружить, это выгодно!</span>
+		    		<p>Скидка 10% для друзей из социальных сетей</p>
+		    	</div>
 	    	</div>
     	</footer>
+		<section class="write-us">
+			<div class="container">
+				<h2>Напишите нам</h2>
+				<button class="button-close"><span class="visually-hidden">Закрыть</span></button>
+				<form action="http://echo.htmlacademy.ru" method="get" class="write-us-form">
+					<div class="write-us-column">
+						<p>
+							<label for="name">Ваше имя</label>
+							<input type="text" name="name"  id="name" placeholder="Представьтесь, пожалуйста" required>
+						</p>
+						<p>
+							<label for="mail">Ваш E-mail</label>
+							<input type="text" name="mail"  id="mail" placeholder="Для отправки ответа" required>
+						</p>
+					</div>
+					<label for="textarea">Текст письма</label>
+					<textarea name="textarea" class="mail-text" id="textarea" required>В свободной форме</textarea>
+					<button type="submit" name="write-us-button" class="button submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	<script src="js/nerds.js"></script>
     </body>
 </html>
