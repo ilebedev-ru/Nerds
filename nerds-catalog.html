@@ -31,55 +31,142 @@
 				<section class="catalog-filter">
 					<h2 class="visually-hidden">Фильтр шаблонов</h2>
 					<form action="http://echo.htmlacademy.ru" method="get" class="catalog-filter-form">
-						<h3>Стоимость</h3>
-						<input type="range">
-						<p>
-							от <input type="number"> до <input type="number">
-						</p>
-						<h3>Сетка:</h3>
-						<label>
-							<input type="radio" name="setka">
-							Адаптивная
-						</label>
-						<label>
-							<input type="radio" name="setka">
-							Фиксированная
-						</label>
-						<label>
-							<input type="radio" name="setka">
-							Резиновая
-						</label>
+						<fieldset class="price">
+							<h3>Стоимость</h3>
+							<input type="range">
+							<p>
+								от <input type="number"> до <input type="number">
+							</p>
+						</fieldset>
+						<fieldset class="setka">
+							<h3>Сетка:</h3>
+							<label>
+								<input type="radio" name="setka">
+								<div class="checkbox-indicator"></div>
+								Адаптивная
+							</label>
+							<label>
+								<input type="radio" name="setka">
+								<div class="checkbox-indicator"></div>
+								Фиксированная
+							</label>
+							<label>
+								<input type="radio" name="setka">
+								<div class="checkbox-indicator"></div>
+								Резиновая
+							</label>
+						</fieldset>
 
-						<h3>Особенности</h3>
-						<label>
-							<input type="checkbox" name="slider" checked>
-							Слайдер
-						</label>
-						<label>
-							<input type="checkbox" name="block">
-							Блок преимуществ
-						</label>
-						<label>
-							<input type="checkbox" name="news" checked>
-							Новости
-						</label>
-						<label>
-							<input type="checkbox" name="gallery">
-							Галерея
-						</label>
-						<label>
-							<input type="checkbox" name="cart" >
-							Корзина
-						</label>
+						<fieldset class="features">
+							<h3>Особенности</h3>
+							<label>
+								<input type="checkbox" name="slider" checked>
+								<div class="checkbox-indicator"></div>
+								Слайдер
+							</label>
+							<label>
+								<input type="checkbox" name="block">
+								<div class="checkbox-indicator"></div>
+								Блок преимуществ
+							</label>
+							<label>
+								<input type="checkbox" name="news" checked>
+								<div class="checkbox-indicator"></div>
+								Новости
+							</label>
+							<label>
+								<input type="checkbox" name="gallery">
+								<div class="checkbox-indicator"></div>
+								Галерея
+							</label>
+							<label>
+								<input type="checkbox" name="cart">
+								<div class="checkbox-indicator"></div>
+								Корзина
+							</label>
+						</fieldset>
 						<button type="submit" class="button">Показать</button>
 					</form>
 				</section>
-			</div>
-
-
-
-
-
+				<section class="catalog-content">
+					<h2 class="visually-hidden">Результаты поиска шаблонов</h2>
+					<div class="catalog-content-sorting">
+						<p>Сортировать:</p>
+						<ul class="catalog-content-sorting-list">
+							<li>По цене</li>
+							<li>По типу</li>
+							<li>По названию</li>
+						</ul>
+						<div class="catalog-content-sorting-order">
+	                            <button>
+	                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polygon points="5.5 0 0 10 11 10 "/></svg><span class="visually-hidden">Cнизу вверх</span>
+	                            </button>
+	                            <button>
+	                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><polyline points="5.5 10 0 0 11 0 "/></svg><span class="visually-hidden">Сверху вниз</span>
+	                            </button>
+	                    </div>
+					</div>
+					<ul class="catalog-content-list">
+						<li>
+							<img src="img/img-sedona.jpg" alt="Шаблон Седона" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>Sedona</h3>
+								<p>Информационный сайт для туристов</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<img src="img/img-pink.jpg" alt="Шаблон Пинк" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>Pink App</h3>
+								<p>Продуктовый лендинг приложения для iOS и Android</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<img src="img/img-barbershop.jpg" alt="Шаблон Барбершоп" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>Barbershop</h3>
+								<p>Сайт салона красоты.<br> Для мужчин, да.</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<img src="img/img-mishka.jpg" alt="Шаблон Мишка" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>Mishka</h3>
+								<p>Интернет-магазин<br> вязанных игрушек</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<img src="img/img-aplus.jpg" alt="Шаблон A Plus" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>A Plus</h3>
+								<p>Лендинг курсов повышения<br> квалификации</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<img src="img/img-kvast.jpg" alt="Шаблон Кваст" width="360" height="576">
+							<div class="catalog-item-info">
+								<h3>Кваст</h3>
+								<p>Промо-сайт производителя<br> крафтового кваса</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+					</ul>
+					<section class="pagination">
+		                <h2 class="visually-hidden">Навигация по страницам</h2>  
+		                <ul class="pagination-list">
+		                    <li class="pagination-item pagination-item-selected"><a>1</a></li>
+		                    <li class="pagination-item"><a href="#">2</a></li>
+		                    <li class="pagination-item"><a href="#">3</a></li>
+		                    <li class="pagination-item"><a href="#">Cледующая</a></li>
+		                </ul>
+	            	</section>
+				</section>	
+			</div>	
 
     		<section class="main-map">
     			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A25fc41a7f52cd0e3d3f0e9debecb016ff8ab3ab520c4780688ff6b1bd516c3ea&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
