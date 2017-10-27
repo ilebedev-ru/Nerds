@@ -820,6 +820,7 @@ footer .container {
 	cursor: pointer;
 }
 
+
 .catalog-filter-form fieldset {
 	margin: 0;
 	margin-bottom: 30px;
@@ -828,8 +829,7 @@ footer .container {
 	border: none;
 }
 
-/*sdsdsdsads*/
-.features input + .checkbox-indicator {
+.checkbox-indicator {
 	position: absolute;
 	top: 0px;
 	left: 0;
@@ -838,60 +838,50 @@ footer .container {
 	height: 23px;
 
 	background-color: transparent;
-	background-image: url("../img/checkbox-off.svg");
 	opacity: 0.3;
 }
 
-.catalog-filter-form input[type="checkbox"]:disabled + .checkbox-indicator {
-	background-image: url("../img/checkbox-off-disabled.svg");
+
+.catalog-filter-form label:hover {
+	color: #000000;
 }
 
-.catalog-filter-form input[type="checkbox"]:focus + .checkbox-indicator {
-	outline: thin dotted;
-	outline: 5px auto -webkit-focus-ring-color;
+.catalog-filter-form label:hover .checkbox-indicator {
+	opacity: 1;
+}
+
+/*переключение состояний*/
+.setka input + .checkbox-indicator {
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/radio-off.svg");
+}
+
+.setka input:checked + .checkbox-indicator {
+	background-image: url("../img/radio-on.svg");
 }
 
 
-.catalog-filter-form input[type="checkbox"]:checked + .checkbox-indicator {
+.features input + .checkbox-indicator {
+	background-image: url("../img/checkbox-off.svg");
+}
+
+.features input:checked + .checkbox-indicator {
 	width: 26px;
 
 	background-image: url("../img/checkbox-on.svg");
 }
 
-.catalog-filter-form input[type="checkbox"]:checked:disabled + .checkbox-indicator {
-	background-image: url("../img/checkbox-on-disabled.svg");
+.catalog-filter-form input:disabled + .checkbox-indicator {
+	opacity: 0.1;
+}
+
+.catalog-filter-form input:disabled label {
+	color: red;
 }
 
 
-/*.setka label::before {
-	position: absolute;
-	left: 0;
-	top: 0;
 
-	width: 17px;
-	height: 17px;
-
-	content: "";
-	background-color: transparent;
-
-	border: 4px solid #a6a6a6;
-	border-radius: 50%;
-}
-
-.features label::before {
-	position: absolute;
-	left: 0;
-	top: 0;
-
-	width: 19px;
-	height: 19px;
-
-	content: "";
-	background-color: transparent;
-
-	border: 2px solid #a6a6a6;
-	border-radius: 2px;
-}*/
 
 .catalog-filter button {
 	color: #000000;
